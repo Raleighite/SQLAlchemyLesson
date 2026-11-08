@@ -1,0 +1,17 @@
+{
+  "files": {
+    "models.py": {
+      "name": "User schema and insert lesson",
+      "description": "Defines a SQLAlchemy User model and SQLite session. Main creates tables, inserts three demonstration users and prints IDs. Module import creates ORM infrastructure; nothing was imported or executed."
+    },
+    "README.md": {
+      "name": "Lesson overview",
+      "description": "Provides a short SQLAlchemy exercise overview and run instructions. Its relationships claim is broader than the single User model implemented."
+    },
+    "LICENSE": {
+      "name": "Original project license",
+      "description": "Preserved upstream project license; separate map tooling notices apply only to the documentation export."
+    }
+  },
+  "routes": {}
+}

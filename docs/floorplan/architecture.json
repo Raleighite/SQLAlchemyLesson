@@ -1,0 +1,125 @@
+{
+  "$schema": "floorplan/architecture@1",
+  "audience": "everyone",
+  "project": {
+    "name": "SQLAlchemyLesson",
+    "summary": "A script-only ORM lesson creates a user table, inserts three demonstration users and prints assigned IDs. There is no interactive menu, relationship implementation or HTTP service.",
+    "entrypoints": [
+      "models.py"
+    ]
+  },
+  "include": [
+    "code",
+    "config",
+    "data",
+    "docs",
+    "other"
+  ],
+  "nodes": [
+    {
+      "id": "model",
+      "label": "User schema",
+      "summary": "User declares id, name, fullname and nickname columns on a declarative Base.",
+      "paths": [
+        "models.py"
+      ],
+      "kind": "service"
+    },
+    {
+      "id": "seed",
+      "label": "Demonstration transaction",
+      "summary": "The main guard creates tables, adds three User objects, commits and prints IDs.",
+      "paths": [
+        "models.py"
+      ],
+      "kind": "service"
+    },
+    {
+      "id": "db",
+      "label": "SQLite database",
+      "summary": "Engine and session target a working-directory SQLite file; data is not read for this map.",
+      "paths": [],
+      "kind": "external"
+    },
+    {
+      "id": "reference",
+      "label": "Project reference and license",
+      "summary": "Original course documentation and any upstream license remain separate from executable processing.",
+      "paths": [
+        "LICENSE",
+        "README.md"
+      ],
+      "kind": "service"
+    }
+  ],
+  "edges": [
+    {
+      "from": "model",
+      "to": "seed",
+      "label": "Running the script creates tables and constructs the demonstration users.",
+      "kind": "data"
+    },
+    {
+      "from": "seed",
+      "to": "db",
+      "label": "Add all three objects and commit the transaction.",
+      "kind": "data"
+    },
+    {
+      "from": "db",
+      "to": "seed",
+      "label": "Print generated IDs",
+      "kind": "data"
+    }
+  ],
+  "flows": [
+    {
+      "id": "main",
+      "title": "Follow the terminal processing path",
+      "steps": [
+        {
+          "node": "model",
+          "note": "Prepare declarative User metadata and the engine-bound session."
+        },
+        {
+          "node": "seed",
+          "note": "Running the script creates tables and constructs the demonstration users."
+        },
+        {
+          "node": "db",
+          "note": "Add all three objects and commit the transaction."
+        },
+        {
+          "node": "seed",
+          "note": "Print generated IDs; repeat runs insert additional rows rather than checking for duplicates."
+        }
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "node": "model",
+      "title": "User schema",
+      "note": "User declares id, name, fullname and nickname columns on a declarative Base."
+    },
+    {
+      "node": "seed",
+      "title": "Demonstration transaction",
+      "note": "The main guard creates tables, adds three User objects, commits and prints IDs."
+    },
+    {
+      "node": "db",
+      "title": "SQLite database",
+      "note": "Engine and session target a working-directory SQLite file; data is not read for this map."
+    }
+  ],
+  "annotations": [
+    {
+      "path": "models.py",
+      "note": "No relationships or HTTP routes are implemented. A repeated script run can insert duplicates. Dependencies and database contents were not exercised.",
+      "tags": [
+        "hotspot"
+      ]
+    }
+  ]
+}

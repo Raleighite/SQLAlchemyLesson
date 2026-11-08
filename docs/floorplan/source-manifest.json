@@ -1,0 +1,41 @@
+{
+  "schema": "floorplan/source-manifest@1",
+  "repository": "Raleighite/SQLAlchemyLesson",
+  "source_commit": "ed6a9b7b851c00a7e92d956e27afb4ab0517f1e2",
+  "mapping_source": "original bytes; no credential derivative",
+  "source_policy": "See checker selected(): application Python/JS/HTML/CSS and actual config/static/template/input classes, excluding docs/policy/tests/dependencies/caches.",
+  "source_files": {
+    "models.py": "94efc68018d394cef83b0f490c9ae8fcc8d2a069d7fab92ae44e5e2cffda58a9",
+    "requirements.txt": "c4b9a991cc0b3b5be64867d4737b94478d106a095179eb2447f902f93e22b059"
+  },
+  "admitted_snapshot": {
+    "LICENSE": "278c0c447ae8be6d5e6b745f064cfc8672bdb36672a22df5d981fa1fc2443967",
+    "models.py": "94efc68018d394cef83b0f490c9ae8fcc8d2a069d7fab92ae44e5e2cffda58a9",
+    "README.md": "5be7d98a79ea827b951a17d7de1db9dab4a692ca19c562c52adf32523f8093a2"
+  },
+  "counts": {
+    "files": 3,
+    "codeFiles": 1,
+    "routes": 0,
+    "modules": 4,
+    "unassigned": 0,
+    "flows": 1,
+    "tour": 3
+  },
+  "artifacts": {
+    "check_freshness.py": "1ae338eb0a8e6d9f96994b72b93dc07022f221c412ab55b264bc0105c6e164a3",
+    "generator.json": "04edcc596cf52a21813e117f01c84aac12d29cfe100ac81d10bf0f153efc349b",
+    "source-census.json": "72fa28fa618ac1523bb3a4d61d99564d366954bff7c81cebc682a30838e6762c",
+    "architecture.json": "02e511a60dcdcd3ba0cadee5608c0f79f8fd839bb17d2ff9fc4382a078302f35",
+    "NOTICE.md": "1b961d21b4feedd4af9be96ea51dd05d1f7cf45304ab4fe88d95ba0cebeada2f",
+    "index.html": "ecd2e7e34e25075f5ea1c17af3f1695eb6fc675987a460b650cf6ac579b85a7a",
+    "README.md": "3ce49abd7be9668f527bb870d2b3f55a316912989fee3f6bbce396e0fd438f0d",
+    "descriptions/reviewed.json": "8f1b77efdf02b630831132e661197cd04c397c1d9c05c95eb960cc1bcddffd5e",
+    "tests/test_freshness.py": "94a5f53967231f5a9f5228de7a8dc9811f4bf2dc8459c8e24781430bf64c30f7",
+    "licenses/inter-LICENSE.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+    "licenses/elkjs-LICENSE.md": "89591d4578fb1ebd91501312a3d25f021bd865a2e436641c1cf7b1bc7e3c1617",
+    "licenses/LICENSE": "65a06a9dab105cd5a2b713a41a020a442bd431e6e19631182ed3889fd1672faf",
+    "licenses/jetbrains-mono-LICENSE.txt": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b",
+    "licenses/source/LICENSE": "278c0c447ae8be6d5e6b745f064cfc8672bdb36672a22df5d981fa1fc2443967"
+  }
+}

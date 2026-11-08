@@ -1,0 +1,45 @@
+{
+  "source_commit": "ed6a9b7b851c00a7e92d956e27afb4ab0517f1e2",
+  "tracked_regular_files": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "bytes": 34
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "bytes": 1063
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "bytes": 211
+    },
+    {
+      "path": "models.py",
+      "mode": "100644",
+      "bytes": 1272
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "bytes": 76
+    }
+  ],
+  "admission_omissions": [
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "bytes": 34
+    },
+    {
+      "path": "requirements.txt",
+      "mode": "100644",
+      "bytes": 76
+    }
+  ],
+  "application_code_coverage": "All application Python/JS/CSS/HTML source admitted; input CSV data and dependency/development metadata are explicit outside boundaries.",
+  "route_review": "No HTTP router in CLI source.",
+  "original_license_unchanged": true
+}
